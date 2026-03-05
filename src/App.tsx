@@ -44,13 +44,13 @@ const App = () => {
         {renderProductList}
       </div>
       <Modal isOpen={isOpen} closeModal={closeModal} title="ADD A NEW PRODUCT" >
-        <div className="space-y-3">
+        <form className="space-y-3">
           {renderFormInputList}
           <div className="flex items-center space-x-3">
               <Button className="bg-indigo-700 hover:bg-indigo-800">Submit</Button>
               <Button className="bg-red-700 hover:bg-red-800">Cancel</Button>
           </div>
-        </div>
+        </form>
       </Modal>
     </main>
   )
